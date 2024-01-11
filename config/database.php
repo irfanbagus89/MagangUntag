@@ -109,7 +109,7 @@ return [
             'trust_server_certificate' => true,
         ],
 
-        'ConnSales' => [
+        'ConnUtility' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST_SECOND', '127.0.0.1'),
@@ -132,21 +132,6 @@ return [
             'database' => env('DB_DATABASE_THIRD', 'forge'),
             'username' => env('DB_USERNAME_THIRD', 'forge'),
             'password' => env('DB_PASSWORD_THIRD', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'encrypt' => 'yes',
-            'trust_server_certificate' => true,
-        ],
-
-        'ConnAccounting' => [
-            'driver' => 'sqlsrv',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST_FOURTH', '127.0.0.1'),
-            'port' => env('DB_PORT_FOURTH', '1433'),
-            'database' => env('DB_DATABASE_FOURTH', 'forge'),
-            'username' => env('DB_USERNAME_FOURTH', 'forge'),
-            'password' => env('DB_PASSWORD_FOURTH', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
