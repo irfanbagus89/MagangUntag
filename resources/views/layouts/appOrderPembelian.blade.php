@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="{{ asset('/images/KRR.png') }}" type="image/gif" sizes="16x16">
@@ -22,7 +21,9 @@
 
 
     <script src="{{ asset('js/User.js') }}"></script>
-
+    {{-- Tailwind --}}
+    {{-- @vite('public/css/tailwind.css') --}}
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -36,7 +37,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    </head>
 
 <body onload="Greeting()">
     <div id="app">
@@ -141,7 +142,6 @@
                 @endif
                 @endforeach
                 </ul>
-
                 {{-- <ul class="navbar-nav mr-auto RDZNavContenCenter">
                             <div class="dropdown">
                                 <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"

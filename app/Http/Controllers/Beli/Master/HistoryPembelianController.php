@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Beli\Informasi;
+namespace App\Http\Controllers\Beli\Master;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HakAksesController;
 
-class DaftarHargaController extends Controller
+class HistoryPembelian extends Controller
 {
     // Display a listing of the resource.
     public function index()
@@ -14,7 +14,7 @@ class DaftarHargaController extends Controller
         $result = (new HakAksesController)->HakAksesProgram('Beli');
         $access = (new HakAksesController)->HakAksesFiturMaster('Beli');
         if ($result > 0) {
-            return view('Beli.Informasi.DaftarHarga', compact('access'));
+            return view('Beli.Master.HistoryPembelian', compact('access'));
         } else {
             abort(404);
         }

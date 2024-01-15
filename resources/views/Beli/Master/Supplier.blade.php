@@ -126,10 +126,10 @@
                                 <label for="mata_uang">Mata Uang</label>
                                 <select name="mata_uang" id="mata_uang" class="input">
                                     <option selected disabled>-- Pilih Mata Uang--</option>
-                                    @foreach ($matauang as $data)
+                                    {{-- @foreach ($matauang as $data)
                                         <option value="{{ $data->Id_MataUang }}">
                                             {{ $data->Nama_MataUang }}</option>
-                                    @endforeach
+                                    @endforeach --}}
                                 </select>
                             </div>
                         </form>

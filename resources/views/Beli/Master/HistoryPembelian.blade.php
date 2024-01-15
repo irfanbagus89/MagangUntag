@@ -72,5 +72,5 @@
                 </div>
             </div>
         </div>
-        <script src="{{ asset('js/OrderPembelian/DaftarHarga.js') }}"></script>
+
     @endsection

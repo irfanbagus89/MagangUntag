@@ -15,8 +15,9 @@ class SupplierController extends Controller
         $supplier = db::connection('ConnPurchase')->select('exec SP_5409_PBL_SUPPLIER @kd = ?', [1]);
         $access = (new HakAksesController)->HakAksesFiturMaster('Beli');
         // dd($supplier);
-        $matauang = db::connection('ConnPurchase')->select('exec SP_7775_PBL_LIST_MATA_UANG');
-        return view('Beli.Master.Supplier', compact('supplier', 'matauang', 'access'));
+        // $matauang = db::connection('ConnPurchase')->select('exec SP_7775_PBL_LIST_MATA_UANG');
+        // return view('Beli.Master.Supplier', compact('supplier', 'matauang', 'access'));
+        return view('Beli.Master.Supplier', compact('supplier', 'access'));
     }
 
     public function getSupplier($id)
